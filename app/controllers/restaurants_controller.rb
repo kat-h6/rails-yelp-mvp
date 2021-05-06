@@ -18,6 +18,7 @@ class RestaurantsController < ApplicationController
 
   def show
     find_restaurant
+    @review = Review.new
   end
 
   private
